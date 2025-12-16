@@ -2,6 +2,8 @@
 
 I fine-tuned a pretrained PatchTST time-series forecasting model with Hugging Face Transformers (Trainer) on the Monash “electricity_hourly_dataset” loaded via sktime
 
+Link: https://colab.research.google.com/drive/1rGUKYEE2zOV3HonhedcxDrGR1e3dpSYY?usp=sharing
+
 ## Dataset and loading
 
 I used the Monash Forecasting Repository dataset called “electricity_hourly_dataset,” loaded through sktime.datasets.ForecastingData. Since the dataset is a panel (many electricity series over time), I converted it into a wide format where each column is a different series and each row is an hourly timestamp. To keep the run manageable in Colab while still staying well above 500k observations, I kept a subset of the series, but kept the total number of observations above the necessary threshold.
